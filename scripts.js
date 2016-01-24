@@ -28,13 +28,13 @@ function prepare_sidebar(){
 				<li><a href="index.html">Strona główna</a></li>\n\
 				<li><a href="about_me.html">O mnie</a>\n\
 								<ul>\n\
-												<a href="imie.html">Imię i nazwisko</a><br/>\n\
-												<a href="miasto.html">Moje miasto</a>\n\
+												<li><a href="imie.html">Imię i nazwisko</a></li>\n\
+												<li><a href="miasto.html">Moje miasto</a></li>\n\
 								</ul>\n\
 				</li>\n\
 				<li><a href="galeria.html">Galeria</a></li>\n\
 				<li><a href="#">Różne</a>\n\
-								<ul><a href="matrix.html">Matrix</ul>\n\
+								<ul><li><a href="matrix.html">Matrix</li></ul>\n\
 				</li>\n\
 				</ul>\n\
 				</h2>';
@@ -69,8 +69,8 @@ function make_matrix_effect(){
 				var h = matrix.offsetHeight;
 				matrix.innerHTML = "";
 				for(i = 0; i < 150; i++){
-								var l = random_int(0, 100);
-								var t = random_int(0, 70);
+								var l = random_int(0, 95);
+								var t = random_int(0, 75);
 								
 								var c = chars.charAt(random_int(0, chars.length - 1));
 								var s = random_int(3,15);
